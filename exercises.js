@@ -38,6 +38,20 @@
  * ie: "oreo" => 3
  */
 
+ function vowelCount(str) {
+     if (typeof str === "string"){
+         var count = 0;
+         for (var i = 0; i < str.length; i++){
+             if (str[i] == "a" || str[i] == "e" || str[i] == "i" || str[i] == "o" || str[i] == "u"){
+                 count++;
+             }
+         }
+         return count;
+     }else{
+         return null;
+     }
+ }
+
  /** Function: timeConvert
  * The function will take the str parameter representing the amount of minutes being passed in and
  * return the number of hours and minutes. Seperate the number of hours
@@ -74,7 +88,7 @@
 module.exports = {
     firstReverse: firstReverse,
     alphaOrder: alphaOrder,
-    vowelCount: null,
+    vowelCount: vowelCount,
     timeConvert: null,
     repeatString: null
 }
