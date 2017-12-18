@@ -7,12 +7,13 @@
  */
 
  function firstReverse(str) {
-     if (str === "") {
+     if (typeof str === "string") {
         return str.split("").reverse().join("");
      }else{
          return null;
      }
     };
+
  /** Function: alphaOrder
  * The function will take the str parameter being passed in and
  * return the string in alphabetical order
@@ -64,7 +65,7 @@
 
 module.exports = {
     firstReverse: firstReverse,
-    alphaOrder: null,
+    alphaOrder: alphaOrder,
     vowelCount: null,
     timeConvert: null,
     repeatString: null
